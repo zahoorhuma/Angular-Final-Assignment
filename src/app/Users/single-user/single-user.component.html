@@ -1,0 +1,48 @@
+<div class="single-user">
+  <div class="images-box">
+    <div class="image-box">
+      <img
+        [class.green]="isConditionMet"
+        [class.red]="!isConditionMet"
+        src="{{ user.avatar }}"
+        height="250px"
+        width="250px"
+        alt="image"
+        style="border-radius: 50%"
+      />
+    </div>
+  </div>
+  <div>
+    <input
+      [disabled]="isUserClick"
+      type="text"
+      name="user"
+      class="form-control"
+      id="user"
+      aria-describedby="userHelp"
+      placeholder="Enter User Name"
+      [(ngModel)]="user.name"
+    />
+    <div style="font-weight: bold">{{ user.email }}</div>
+
+    <div>{{ user.role }}</div>
+  </div>
+  <div>
+    <button
+      class="btn btn-secondary"
+      *ngIf="isUserClick"
+      (click)="editUser()"
+      [disabled]="!isConditionMet"
+    >
+      Edit User
+    </button>
+    <button
+      class="btn btn-primary"
+      *ngIf="!isUserClick"
+      (click)="saveUser()"
+      [disabled]="!isConditionMet"
+    >
+      Save User
+    </button>
+  </div>
+</div>

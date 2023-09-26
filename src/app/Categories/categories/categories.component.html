@@ -1,0 +1,7 @@
+<button class="btn btn-primary" (click)="addCategory()">Add Category</button>
+<div class="categories">
+  <app-category-item
+    *ngFor="let category of categories"
+    [category]="category"
+  ></app-category-item>
+</div>

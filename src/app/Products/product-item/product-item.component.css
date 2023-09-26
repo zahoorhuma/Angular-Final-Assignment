@@ -1,0 +1,22 @@
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 5px;
+}
+.product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.prod-desc {
+  padding: 10px;
+}
+
+.prod-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

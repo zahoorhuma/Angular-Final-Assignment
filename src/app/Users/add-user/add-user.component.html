@@ -1,0 +1,50 @@
+<p>add-user works!</p>
+
+<div class="add-user">
+  <div>
+    <img
+      src="{{ user.avatar }}"
+      height="150px"
+      width="150px"
+      style="border-radius: 50px"
+    />
+  </div>
+  <input
+    type="text"
+    id="Name"
+    class="form-control"
+    name="Name"
+    [(ngModel)]="user.name"
+    placeholder="Enter Name"
+    required
+  />
+  <input
+    type="email"
+    id="Email"
+    class="form-control"
+    name="Email"
+    [(ngModel)]="user.email"
+    placeholder="Enter Email"
+    required
+  />
+  <input
+    type="password"
+    id="pass"
+    class="form-control"
+    name="Password"
+    [(ngModel)]="user.password"
+    placeholder="Enter Password"
+    required
+  />
+  <input
+    type="text"
+    id="image"
+    class="form-control"
+    name="Avatar"
+    [(ngModel)]="user.avatar"
+    placeholder="Enter Image url"
+    required
+  />
+  <div>{{ message }}</div>
+  <button (click)="submit()">Submit</button>
+</div>

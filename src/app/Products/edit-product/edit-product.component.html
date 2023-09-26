@@ -1,0 +1,62 @@
+<form>
+  <div class="form-group">
+    <label for="title">Title:</label>
+
+    <input
+      type="text"
+      id="title"
+      class="form-control"
+      name="title"
+      [(ngModel)]="product.title"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="price">Price:</label>
+    <input
+      type="number"
+      id="price"
+      class="form-control"
+      name="price"
+      [(ngModel)]="product.price"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea
+      disabled
+      id="description"
+      name="description"
+      class="form-control"
+      [(ngModel)]="product.description"
+      required
+    ></textarea>
+  </div>
+  <div class="form-group">
+    <div class="form-group col-md-4">
+      <label for="inputState">Category</label>
+      <select
+        disabled
+        id="inputState"
+        class="form-control"
+        [(ngModel)]="product.category.id"
+        name="categoryId"
+      >
+        <option selected value="1">{{ product.category.id }}</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="images">Images:</label>
+    <input
+      type="text"
+      id="images"
+      name="images"
+      class="form-control"
+      [(ngModel)]="product.images[0]"
+      required
+    />
+  </div>
+  <button type="submit" (click)="submitDetails()">Submit</button>
+</form>

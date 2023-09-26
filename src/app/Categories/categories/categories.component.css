@@ -1,0 +1,11 @@
+.categories {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70%;
+  /* background: pink; */
+  overflow: auto;
+}

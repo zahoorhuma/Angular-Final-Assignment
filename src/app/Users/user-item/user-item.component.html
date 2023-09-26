@@ -1,0 +1,23 @@
+<div class="user-item">
+  <div class="user-image">
+    <img
+      src="{{ user.avatar }}"
+      height="100px"
+      width="100px"
+      style="border-radius: 50%"
+    />
+    <div>
+      <div>
+        <div>{{ user.email }}</div>
+        <div style="font-style: italic">{{ user.name }}</div>
+        <div style="font-style: italic">{{ user.role }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <button type="button" class="btn btn-dark" (click)="viewUser(user.id)">
+      View User Details
+    </button>
+  </div>
+</div>

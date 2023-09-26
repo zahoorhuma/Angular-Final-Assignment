@@ -1,0 +1,9 @@
+.products {
+  width: 60%;
+  margin: auto;
+}
+
+.add-prod {
+  display: flex;
+  justify-content: right;
+}

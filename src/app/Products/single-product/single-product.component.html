@@ -1,0 +1,26 @@
+<div class="single-product-div">
+  <div class="images-box">
+    <div class="image-box">
+      <img
+        *ngIf="product.images.length > 0"
+        src="{{ product.images[selectedImage] }}"
+        height="250px"
+        width="250px"
+        alt="image"
+      />
+    </div>
+    <div class="images-div">
+      <div
+        *ngFor="let item of product.images; let i = index"
+        (click)="imageClick(i)"
+      >
+        <img src="{{ item }}" height="50px" width="50px" alt="image" />
+      </div>
+    </div>
+  </div>
+  <div>
+    <div style="font-weight: bold">{{ product.title }}</div>
+    <div>{{ product.description }}</div>
+    <div>{{ "$ " + product.price }}</div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.user-item {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.user-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

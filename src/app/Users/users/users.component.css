@@ -1,0 +1,10 @@
+.users {
+  width: 60%;
+  margin: auto;
+}
+
+.add-user {
+
+  display: flex;
+  justify-content: right;
+}

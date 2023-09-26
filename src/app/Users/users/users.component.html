@@ -1,0 +1,11 @@
+<div class="add-user users">
+  <button class="btn btn-primary" (click)="addCategory()">Add User</button>
+</div>
+
+<div class="users">
+  <app-user-item
+    *ngFor="let user of users"
+    [user]="user"
+    class="user"
+  ></app-user-item>
+</div>

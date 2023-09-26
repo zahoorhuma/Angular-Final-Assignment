@@ -1,0 +1,28 @@
+<div class="card product">
+  <div>
+    <img src="{{ product.images[0] }}" height="100px" width="100px" />
+  </div>
+  <div class="prod-div">
+    <div class="prod-desc">
+      <div>{{ product.title }}</div>
+      <div style="font-style: italic">{{ product.description }}</div>
+      <div>
+        <button
+          type="button"
+          class="btn btn-dark"
+          (click)="viewProduct(product.id)"
+        >
+          View Details
+        </button>
+        <button
+          type="button"
+          class="btn btn-dark"
+          (click)="editProduct(product.id)"
+        >
+          Edit Details
+        </button>
+      </div>
+    </div>
+    <div>{{ "$" + product.price }}</div>
+  </div>
+</div>

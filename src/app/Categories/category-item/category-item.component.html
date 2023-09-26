@@ -1,0 +1,12 @@
+<div>
+  <div>
+    <img
+      src="{{ category.image }}"
+      height="100px"
+      width="100px"
+      style="border-radius: 50px"
+      (click)="viewCategory(category.id)"
+    />
+  </div>
+  <div class="category">{{ category.name }}</div>
+</div>

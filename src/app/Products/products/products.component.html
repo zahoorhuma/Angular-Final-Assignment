@@ -1,0 +1,13 @@
+
+<app-categories></app-categories>
+<div class="products add-prod">
+  <button type="button" class="btn btn-secondary" (click)="addProduct()">
+    Add Product
+  </button>
+</div>
+<div class="products">
+  <app-product-item
+    *ngFor="let product of products"
+    [product]="product"
+  ></app-product-item>
+</div>
